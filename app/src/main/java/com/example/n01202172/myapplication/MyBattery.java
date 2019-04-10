@@ -22,7 +22,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MyBattery extends AppCompatActivity {
+public class
+MyBattery extends AppCompatActivity {
 
     private FirebaseDatabase database;
     private DatabaseReference myRef;

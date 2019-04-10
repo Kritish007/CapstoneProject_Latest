@@ -105,9 +105,15 @@ public class MyScan extends AppCompatActivity {
 
 //Gala Apple
                 if(fruit.equals("Gala Apple")){
-                if( RGala >= 159 && RGala <= 232 && GGala >= 79 && GGala <=155 && BGala >=77 && BGala <=130 ) {            //Check Red
+                if( RGala >= 159 && RGala <= 232) {
+                    if (GGala >= 79 && GGala <= 155) {
+                        if (BGala >= 77 && BGala <= 130) {            //Check Red
                             result.setText("Result: Gala Apple is ready");
                         }
+                    }
+
+                }
+
                     else {
                         result.setText("Result: Gala Apple is not ready");
                     }
@@ -128,9 +134,9 @@ public class MyScan extends AppCompatActivity {
                 }
 // Strawberry
                 if(fruit.equals("Strawberry")) {
-                    if (RStrawberry >= 210 && RStrawberry <= 254) {            //Check Red
-                        if (GStrawberry >= 102 && GStrawberry <= 170) {         //Check Green
-                            if (BStrawberry >= 90 && BStrawberry <= 130) {     //Check Blue
+                    if (RStrawberry >= 75 && RStrawberry <= 254) {            //Check Red
+                        if (GStrawberry >= 25 && GStrawberry <= 170) {         //Check Green
+                            if (BStrawberry >= 25 && BStrawberry <= 130) {     //Check Blue
                                 result.setText("Result: Strawberry is ready");
                             }
                         }
@@ -141,9 +147,9 @@ public class MyScan extends AppCompatActivity {
                 }
 //Banana
                 if(fruit.equals("Banana")){
-                if( RBanana >= 215 && RBanana <= 251 ) {            //Check Red
-                    if ( GBanana >= 208 && GBanana <= 240 ){         //Check Green
-                        if ( BBanana >= 160 && BBanana <= 200 ){     //Check Blue
+                if( RBanana >= 55 && RBanana <= 251 ) {            //Check Red
+                    if ( GBanana >= 35 && GBanana <= 240 ){         //Check Green
+                        if ( BBanana >= 25 && BBanana <= 200 ){     //Check Blue
                             result.setText("Result: Banana is ready");
                         }
                     }
@@ -156,9 +162,9 @@ public class MyScan extends AppCompatActivity {
 
                 if(fruit.equals("Orange")){
 
-                if( ROrange >= 226 && ROrange <= 255 ) {            //Check Red
-                    if ( GOrange >= 99 && GOrange <= 212 ){         //Check Green
-                        if ( BOrange >= 26 && BOrange <= 150 ){     //Check Blue
+                if( ROrange >= 130 && ROrange <= 255 ) {            //Check Red
+                    if ( GOrange >= 40 && GOrange <= 212 ){         //Check Green
+                        if ( BOrange >= 25 && BOrange <= 150 ){     //Check Blue
                             result.setText("Result: Orange is ready");
                         }
                     }

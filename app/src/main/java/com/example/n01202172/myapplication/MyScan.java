@@ -105,15 +105,9 @@ public class MyScan extends AppCompatActivity {
 
 //Gala Apple
                 if(fruit.equals("Gala Apple")){
-                if( RGala >= 159 && RGala <= 232) {
-                    if (GGala >= 79 && GGala <= 155) {
-                        if (BGala >= 77 && BGala <= 130) {            //Check Red
+                if(( RGala >= 80 && RGala <= 175) && (GGala >= 20 && GGala <= 75) && (BGala >= 20 && BGala <= 75)) {
                             result.setText("Result: Gala Apple is ready");
                         }
-                    }
-
-                }
-
                     else {
                         result.setText("Result: Gala Apple is not ready");
                     }
@@ -121,38 +115,26 @@ public class MyScan extends AppCompatActivity {
  // Green Apple
                 if(fruit.equals("Green Apple")) {
 
-                    if (RGreenApple >= 125 && RGreenApple <= 200) {            //Check Red
-                        if (GGreenApple >= 140 && GGreenApple <= 220) {         //Check Green
-                            if (BGreenApple >= 67 && BGreenApple <= 120) {     //Check Blue
-                                result.setText("Result: Green Apple is ready");
-                            }
-                        }
-
-                    } else {
-                        result.setText("Result: Green Apple is not ready");
+                    if ((RGreenApple >= 150 && RGreenApple <= 210) && (GGreenApple >= 190 && GGreenApple <= 225) && (BGreenApple >= 95 && BGreenApple <= 125)) {            //Check Red
+                        result.setText("Result: Green Apple is ready");
+                    }
+                    else {
+                    result.setText("Result: Green Apple is not ready");
                     }
                 }
 // Strawberry
                 if(fruit.equals("Strawberry")) {
-                    if (RStrawberry >= 75 && RStrawberry <= 254) {            //Check Red
-                        if (GStrawberry >= 25 && GStrawberry <= 170) {         //Check Green
-                            if (BStrawberry >= 25 && BStrawberry <= 130) {     //Check Blue
+                    if ((RStrawberry >= 100 && RStrawberry <= 190) && (GStrawberry >= 20 && GStrawberry <= 55) && (BStrawberry >= 20 && BStrawberry <= 60) ) {            //Check Red
                                 result.setText("Result: Strawberry is ready");
                             }
-                        }
-
-                    } else {
+                    else {
                         result.setText("Result: Strawberry is not ready");
                     }
                 }
 //Banana
                 if(fruit.equals("Banana")){
-                if( RBanana >= 55 && RBanana <= 251 ) {            //Check Red
-                    if ( GBanana >= 35 && GBanana <= 240 ){         //Check Green
-                        if ( BBanana >= 25 && BBanana <= 200 ){     //Check Blue
+                if( (RBanana >= 180 && RBanana <= 255) && (GBanana >= 130 && GBanana <= 205) && (BBanana >= 70 && BBanana <= 105)) {            //Check Red
                             result.setText("Result: Banana is ready");
-                        }
-                    }
                 }
                 else {
                     result.setText("Result: Banana is not ready");
@@ -162,13 +144,9 @@ public class MyScan extends AppCompatActivity {
 
                 if(fruit.equals("Orange")){
 
-                if( ROrange >= 130 && ROrange <= 255 ) {            //Check Red
-                    if ( GOrange >= 40 && GOrange <= 212 ){         //Check Green
-                        if ( BOrange >= 25 && BOrange <= 150 ){     //Check Blue
+                if(( ROrange >= 170 && ROrange <= 255 ) && ( GOrange >= 50 && GOrange <= 90 ) && ( BOrange >= 30 && BOrange <= 55 )){            //Check Red
                             result.setText("Result: Orange is ready");
                         }
-                    }
-                }
                 else {
                     result.setText("Result: Orange is not ready");
                 }
